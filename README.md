@@ -140,15 +140,3 @@ seaborn>=0.11.0
 ## Results Summary
 
 This analysis successfully demonstrates that economic conditions are the primary driver of term deposit subscriptions, followed by customer contact history and demographics. The Decision Tree model achieved the best recall (51.4%) for identifying potential subscribers, while Logistic Regression provided the best overall discriminative ability (ROC-AUC: 0.935). The PCA analysis revealed that 24 carefully selected feature combinations can capture 95% of the data's predictive power, enabling more efficient model training without sacrificing performance.
-
-## Future Work
-
-- Implement ensemble methods (Random Forest, Gradient Boosting)
-- Explore advanced feature engineering techniques
-- Investigate cost-sensitive learning approaches
-- Develop real-time prediction pipeline
-- A/B testing framework for campaign optimization
-
----
-
-*This project was completed as part of UC Berkeley's Machine Learning course, demonstrating end-to-end machine learning workflow from data preprocessing through model deployment recommendations.*
