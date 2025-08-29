@@ -140,3 +140,15 @@ seaborn>=0.11.0
 ## Results Summary
 
 This analysis successfully demonstrates that economic conditions are the primary driver of term deposit subscriptions, followed by customer contact history and demographics. The Decision Tree model achieved the best recall (51.4%) for identifying potential subscribers, while Logistic Regression provided the best overall discriminative ability (ROC-AUC: 0.935). The PCA analysis revealed that 24 carefully selected feature combinations can capture 95% of the data's predictive power, enabling more efficient model training without sacrificing performance.
+
+## Future Work
+
+- Implement ensemble methods (Random Forest, Gradient Boosting)
+- Explore advanced feature engineering techniques
+- Investigate cost-sensitive learning approaches
+- Develop real-time prediction pipeline
+- A/B testing framework for campaign optimization
+
+## Business Recommendations
+
+Based on this analysis, implement an economic timing strategy by monitoring key indicators (euribor3m, employment rates) to launch campaigns during favorable conditions, while immediately switching to cellular contacts and deploying the Decision Tree model to score and prioritize high-probability customers. In the short term, focus resources on the top 20% of customers by predicted probability and use the Logistic Regression model's ROC-AUC of 0.935 to set dynamic probability thresholds for campaign intensity. For sustained improvement, develop ensemble methods to boost the current 51.4% recall rate, implement real-time scoring using the 24 PCA components, and establish an A/B testing framework to optimize contact strategies while incorporating cost-sensitive learning that balances campaign costs against expected deposit values.
